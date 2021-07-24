@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Delete{% endblock  %}
+
+{% block content %}
+    <h2>are you sure you want to delete {{password.id}}</h2>
+    <form action="" method='post'  >
+        {% csrf_token %}
+        <input type="hidden">
+        <button type='submit'>Yes</button>
+    </form>
+
+{% endblock content %}
+
