@@ -3,7 +3,7 @@
 {% block title %}Delete{% endblock  %}
 
 {% block content %}
-    <h2>are you sure you want to delete {{password.id}}</h2>
+    <h2>are you sure you want to delete {{password.username}}</h2>
     <form action="" method='post'  >
         {% csrf_token %}
         <input type="hidden">
